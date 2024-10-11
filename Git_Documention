@@ -64,6 +64,31 @@ git version 2.43.0
                  git stash list
                  git stash pop
                  git commit -m "file moved"
+*How to resolve the conflict in git, While pushing some files from local repo to remote repo sometimes we will face conflicts 
+*One pull request will raise that time follow this command
+             git pull -u origin BRANCHES_NAME
+             git status This command will shows the list of file which are having conflicts
+             vi conflict_file_name edit the chenges
+             git add .
+             git commit -m "conflict resolved"
+*Now we are seeing squash method
+           *It's used to commit the multiple commit inti single commit
+             git rebase -i COMMIT_ID (write the commit_id older one)
+           ***Then editor will open here you can change the pick --->squash but leave the first/older file same as pick***
+           *ctrl+o and crtl+x
+
+             
+
+             
+
+
+
+
+
+
+ 
+
+
 
 
 
