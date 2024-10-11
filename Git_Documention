@@ -44,9 +44,10 @@ git version 2.43.0
            git remote add origin Remote_URL
            git push -u origin master
 *Next we are deep dive into branches, How to create a branches
-
        git branch BRANCH_NAME
        git checkout -b BRANCH_NAME
+*How check which branch we are currently
+      git branch
 *How to switch to one branch to another branch 
        git checkout BRANCH_NAME
 *How to delete the branch
