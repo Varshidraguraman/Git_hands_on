@@ -43,6 +43,27 @@ git version 2.43.0
 *Finally all the changes are done you need to move the file to Local repo to Remote rep
            git remote add origin Remote_URL
            git push -u origin master
+*Next we are deep dive into branches, How to create a branches
+
+       git branch BRANCH_NAME
+       git checkout -b BRANCH_NAME
+*How to switch to one branch to another branch 
+       git checkout BRANCH_NAME
+*How to delete the branch
+       git checkout -d BRANCH_NAME
+*To merge or combing a sequences of commit to one branch to another branch
+       git rebase source_branch destination_branch
+       git rebase develop master
+*To copy the particular commit_id to one branch to another branch
+      git cherry-pick commit_id
+*This below command saves our local modification away and reverts the working directory to match the head commit
+                 touch file_name
+                 git add .
+                 git stash
+                 git stash list
+                 git stash pop
+                 git commit -m "file moved"
+
 
 
  
