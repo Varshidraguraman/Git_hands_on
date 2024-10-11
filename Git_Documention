@@ -1,2 +1,50 @@
 Here i we are going to see the git hands on project
 *First create an account in git hub and then create one seperatr repositry in git
+*Next create one ec2 instances and connect the instances through ssh
+*Check whether your ubuntu machine have git or not 
+
+root@ip-10-0-2-132:~# git --version
+git version 2.43.0
+
+ 
+*Then clone our repository by git clone REPOSITORY_NAME
+*To see the git file use ls -la command
+*Next use the Command git init to create an empty repository
+*After create one file using Touch command
+*Next here we are having three staging
+       1,Working area
+       2,statging 
+       3,Local repo
+       4, Remote repo
+*After creating a file in working repo by using touch command 
+* next we nee to check the status of the file for that we will git status command 
+* The status command shows the what are all files are in Untracked files
+*To make them tracking and to just move the file from working area to staging area
+        git add file_name
+*The git add command it make the file move to the working area ---> staging area
+* now the file is in staging area if you want to bring back the file to the working area
+      git rm --cached file_name
+*But now the file was in staging area to move the file to the local repo
+      Git commit --m "file moved"
+*After commit step to check whether the file was committed or not  
+          git log 
+*It will shows all the recent commits made by us
+*After moving to the staging area we made some changes in working area .........But it will not reflect in staging area.If you need the same file to be there use this command
+         Git restore file_name
+*But if you need the changed file follow the same step
+                1, git add
+                2, git commit -m "moved"
+*Now i was created multiple commits and new versions also updated but i need to go for the older version "To move the head position"
+           git log
+           git reset --soft commit_id
+           git rest --hard commit_id  --->{It will delete the file in working area too}
+*To delete the particular commit id 
+           git revert commit_id
+*Finally all the changes are done you need to move the file to Local repo to Remote rep
+           git remote add origin Remote_URL
+           git push -u origin master
+
+
+ 
+
+
